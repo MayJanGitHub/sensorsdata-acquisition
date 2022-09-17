@@ -1,0 +1,36 @@
+/**index.wxss**/
+.btn{
+  margin-bottom: 30rpx;
+}
+.loginid-gap{
+  display: flex;
+  justify-content: center;
+}
+.weui-input{
+  width: 300rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border: 1rpx solid #ccc;
+  box-sizing: border-box;
+  padding: 0 10rpx;
+}
+.login-btn{
+  width: 140rpx !important;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0;
+  margin: 0 30rpx 30rpx !important;
+}
+.userinfo-gap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40rpx;
+}
+.userinfo-nickname{
+  text-align: center;
+}
+.userinfo-avatar{
+  width: 200rpx;
+  height: 200rpx;
+}

@@ -1,0 +1,21 @@
+<!-- index.wxml -->
+<view>
+  <button class="btn" bindtap="jumpPage">常用API</button>
+  <button class="btn" bindtap="sendTrack">点击事件</button>
+  <button class="btn" bindtap="sendTrack">track</button>
+  <block>
+    <view class="loginid-gap">
+      <input class="weui-input" bindinput="setVal" data-key="loginId" placeholder="输入login_id" />
+      <button class="login-btn btn" bindtap="sendLogin">login</button>
+    </view>
+  </block>
+  <button class="btn" bindtap="logout">退出登录</button>
+  <block>
+    <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile">获取头像昵称</button>
+    <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取头像昵称</button>
+  </block>
+  <view class="userinfo-gap">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+  </view>
+</view>
